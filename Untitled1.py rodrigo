@@ -1,0 +1,34 @@
+print("Hello, world")
+print("Python has three numeric tipes: int, float and complex")
+myValue=1
+print(type(myValue))
+print(str(myValue)+ " is of data type "+str(type(myValue)))
+myValue=3.1415926
+print(myValue)
+print(type(myValue))
+print(str(myValue)+" is of the data type "+ str(type(myValue)))
+myValue=5j
+print(myValue)
+print(type(myValue))
+print(str(myValue)+" is of the type "+str(type(myValue)))
+myValue=True
+print(myValue)
+print(type(myValue))
+print(str(myValue)+" is of the data type "+str(type(myValue)))
+myValue=False
+print(myValue)
+print(type(myValue))
+print(str(myValue)+" is of the data type "+str(type(myValue)))
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+# Example usage 
+number = 5
+result = factorial(number)
+print(f"The factorial of {number} is {result}")
+# input number 
+number = int(input("Enter a number: ")) 
+result = factorial(number)
+print(f"The factorial of {number} is {result}")
